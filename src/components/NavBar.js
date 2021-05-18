@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar,Nav,Form,Button,FormControl} from 'react-bootstrap';
+import {Navbar,Nav,Form,NavDropdown,FormControl} from 'react-bootstrap';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import './navbar.css';
@@ -13,7 +13,10 @@ const NavBar = ()=>{
     </Form>
     <Nav className="mr-auto">
     <AccountCircleIcon fontSize='large' className='icon'></AccountCircleIcon>
-      <Nav.Link href="#account">Account</Nav.Link>
+    <NavDropdown title="Account" id="navbarScrollingDropdown">
+    <NavDropdown.Item href="#login">Login</NavDropdown.Item>
+    <NavDropdown.Item href="#register">Register</NavDropdown.Item>
+  </NavDropdown>
     </Nav>
   </Navbar> 
   
