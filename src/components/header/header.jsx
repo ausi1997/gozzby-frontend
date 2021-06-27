@@ -4,7 +4,7 @@ import {AppBar , Toolbar ,makeStyles,InputBase,fade,Box,IconButton, Typography ,
 import {Search} from '@material-ui/icons';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import Logo from '../assets/logo/logo.png';
+import Logo from '../../assets/logo/logo.png';
 
  const useStyle = makeStyles((theme)=>({
      header:{

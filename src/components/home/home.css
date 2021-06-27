@@ -1,0 +1,14 @@
+.navcomp{
+    display: flex;
+    margin-top: 70px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+}
+.text{
+    text-align: center;
+}
+.comp{
+    margin-left: 50px;
+}
