@@ -17,7 +17,7 @@ const Navbar = ()=>{
                 return(
                     <Box className='comp'>
                     <img className='img' src={item.url}></img>
-                    <Typography className='text'>{item.text}</Typography>
+                   <Typography className='text'>{item.text}</Typography>
                     </Box>
                     )
             })

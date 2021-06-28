@@ -10,3 +10,10 @@ export const navData = [
     {url:'https://sunnewsonline.com/wp-content/uploads/2017/10/sports.jpg', text:'Sports'},
     {url:'https://n2.sdlcdn.com/imgs/f/t/3/Newborn-Baby-Care-Useful-Products-SDL445798585-1-e8510.JPG', text:'Baby'}
 ]
+
+export const crouselData = [
+    {url:'https://www.samsungmobilepress.com/asset/asset/55eed843-ebec-4929-a318-3c64326522c8/big_event01.jpg'},
+    {url:'https://i.gadgets360cdn.com/large/mi_105g_twitter_1589795438960.jpg'},
+    {url:'https://i.ytimg.com/vi/6Si9ra5x9jU/maxresdefault.jpg'},
+    {url:'https://s3.envato.com/files/199593124/BEE-1620-Fashion%20Sale%20Banners_01_Preview4.jpg'}
+]
