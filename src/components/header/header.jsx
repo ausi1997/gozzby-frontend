@@ -5,6 +5,7 @@ import {Search} from '@material-ui/icons';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Logo from '../../assets/logo/logo.png';
+import {Link} from 'react-router-dom';
 
  const useStyle = makeStyles((theme)=>({
      header:{
@@ -46,13 +47,15 @@ import Logo from '../../assets/logo/logo.png';
         marginLeft:250,
         marginRight:50,
         fontSize:16,
-        color:'rgb(56, 44, 28)'
+        color:'rgb(56, 44, 28)',
+        textDecoration:'none'
       },
       cart:{
           marginLeft:50,
           fontSize:6,
           display:'flex',
-          color:'rgb(56, 44, 28)'
+          color:'rgb(56, 44, 28)',
+          textDecorationLine:'none'
       },
       more:{
         fontSize:16,
@@ -65,7 +68,9 @@ const Header = ()=>{
         <div>
         <AppBar className={classes.header}>
         <Toolbar>
+        <Link to='/'>
         <img src={Logo} className={classes.logo} alt='loading...'></img>
+        </Link>
         <div className={classes.search}>
         <InputBase
           placeholder="Search for products..."
@@ -79,6 +84,7 @@ const Header = ()=>{
         <Search/>
       </div>
       </div>
+      <Link to='/account'>
       <Box>
       <IconButton
       aria-label="account of current user"
@@ -90,14 +96,16 @@ const Header = ()=>{
       Account
     </IconButton>
       </Box>
+      </Link>
       <Typography className={classes.more}>More</Typography>
+      <Link to='/cart'>
       <Box className={classes.cart}>
       <Typography>Cart</Typography>
       <Badge badgeContent={4} color="error">
        <ShoppingCartIcon></ShoppingCartIcon>
        </Badge>
-     
       </Box>
+      </Link>
         </Toolbar>
         </AppBar>
         </div>

@@ -16,7 +16,7 @@ const Navbar = ()=>{
             navData.map(item=>{
                 return(
                     <Box className='comp'>
-                    <img className='img' src={item.url}></img>
+                    <img className='img' src={item.url} alt='loading...'></img>
                    <Typography className='text'>{item.text}</Typography>
                     </Box>
                     )

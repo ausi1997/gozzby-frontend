@@ -15,7 +15,7 @@ const Banner = ()=>{
         {
             crouselData.map(item =>{
                 return(
-                    <img className='banner' src={item.url}></img>
+                    <img className='banner' src={item.url} alt='loading...'></img>
                 )
             } )
         }
