@@ -18,3 +18,26 @@
     height: 320px;
     margin: 10px;
 }
+.product{
+    height: 140px;
+}
+.slide{
+    margin-top: 5px;
+}
+.container{
+    display: flex;
+}
+.deal{
+    color: tomato;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.counter{
+    margin-left: 10px;
+}
+
+.timer{
+    height:40px;
+    width: 40px;
+    padding-left: 10px;
+}

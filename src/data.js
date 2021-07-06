@@ -17,3 +17,6 @@ export const crouselData = [
     {url:'https://i.ytimg.com/vi/6Si9ra5x9jU/maxresdefault.jpg'},
     {url:'https://s3.envato.com/files/199593124/BEE-1620-Fashion%20Sale%20Banners_01_Preview4.jpg'}
 ]
+ export const timer = {
+    url:'https://cdn2.iconfinder.com/data/icons/tourism-travel-2-4/65/67-512.png'
+}
