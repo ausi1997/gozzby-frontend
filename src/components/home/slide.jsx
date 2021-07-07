@@ -14,7 +14,7 @@ import Crousel from 'react-multi-carousel';
 import Countdown from 'react-countdown';
 
 import "react-multi-carousel/lib/styles.css";
-import { Typography } from '@material-ui/core';
+import { Box, Button, Typography } from '@material-ui/core';
 
 const responsive = {
   superLargeDesktop: {
@@ -41,29 +41,40 @@ const renderer = ({hours,minutes,seconds})=>{
 }
 const Slide = ()=>{
     return(
-        <div className='slide'>
+        <Box className='slide'>
         <div className='container'>
         <Typography className='deal'>Deal of the day</Typography>
-        <Countdown className='counter' date={Date.now() + 5.04e+7} renderer={renderer}></Countdown>
-        </div>
+        <Typography className='counter'>
+        <Countdown  date={Date.now() + 5.04e+7} renderer={renderer}></Countdown>
+        </Typography>
         <Typography>
         <img className='timer' src={timer.url} alt='loading...'></img>
         </Typography>
+        <div className='btn'>
+        <Button variant='contained' color='primary'>View All</Button>
+        </div>
+        </div>   
+        <hr style={{width:'96%'}}></hr>
         <Crousel responsive={responsive} infinite={true} draggable={false} centerMode={true}
           autoPlay={true}
             autoPlaySpeed={2000}
               keyBoardControl={true}
               showDots={false}
-              removeArrowOnDeviceType={'tablet' , 'mobile'}>
+              removeArrowOnDeviceType={'tablet , mobile'}>
         {
             products.map((product)=>{
                 return(
-                    <img className='product' src={product.url}></img>
+                    <div className='contain' style={{textAlign:'center'}}>
+                    <img className='product' src={product.url} alt='loading...'></img>
+                    <p className='text' style={{fontWeight:'bolder'}}>{product.title.shortTitle}</p>
+                    <p className='text' style={{color:'green'}}>{product.discount}</p>
+                    <p className='text'style={{opacity:'.6'}}>{product.tagline}</p>
+                    </div>
                 )
             })
         }
         </Crousel>
-        </div>
+        </Box>
     )
 }
 

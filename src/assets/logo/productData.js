@@ -1,18 +1,18 @@
  export const products = [
     { 
         id: 'product1',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/71LRBr1aLNS._SL1500_.jpg', 
+        detailUrl: 'https://www.amazon.in/gp/help/customer/display.html/ref=ftinfo_dp_?ie=UTF8&pop-up=1&nodeId=200534000',
         title: {
-            shortTitle: 'Home & Kitchen',
-            longTitle: 'Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)'
+            shortTitle: 'OnePlus Nord CE 5G',
+            longTitle: 'OnePlus Nord CE 5G (Charcoal Ink, 8GB RAM, 128GB Storage)'
         }, 
         price: {
-            mrp: 1195,
-            cost: 625,
-            discount: '47%'
+            mrp: 25000,
+            cost: 22500,
+            discount: '10%'
         },
-        description: 'This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.',
+        description: '64MP+8MP+2MP triple rear camera with 1080p video at 30/60 fps, 4k 30 fps | 16MP front camera with 1080p video at 30/60 fps.',
         discount: 'Extra 10% Off', 
         tagline: 'Deal of the day' 
     },
