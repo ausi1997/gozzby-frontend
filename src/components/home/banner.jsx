@@ -10,7 +10,7 @@ import './home.css';
 
 const Banner = ()=>{
     return(
-        <div>
+        <div style={{marginRight:'10px'}}>
         <Carousel animation='slide' autoPlay={true}>
         {
             crouselData.map(item =>{

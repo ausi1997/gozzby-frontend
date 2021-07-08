@@ -20,3 +20,9 @@ export const crouselData = [
  export const timer = {
     url:'https://cdn2.iconfinder.com/data/icons/tourism-travel-2-4/65/67-512.png'
 }
+
+export const banner =[ 
+    {url:'https://image.freepik.com/free-vector/sale-bannersuper-deal-sale-banner-template-design-big-sale-special-offer-end-season-special-offer-banner-abstract-promotion-graphic-element_1408-599.jpg'},
+    {url:'https://image.freepik.com/free-vector/promotion-fashion-banner_1188-138.jpg'},
+    {url:'https://images.financialexpress.com/2019/09/diwali-with-mi-sale.jpg'}
+]

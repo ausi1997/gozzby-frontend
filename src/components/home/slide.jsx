@@ -39,17 +39,23 @@ const responsive = {
 const renderer = ({hours,minutes,seconds})=>{
     return <span>{hours}:{minutes}:{seconds} left</span>
 }
-const Slide = ()=>{
+const Slide = ({timerData,title})=>{
     return(
         <Box className='slide'>
         <div className='container'>
-        <Typography className='deal'>Deal of the day</Typography>
-        <Typography className='counter'>
-        <Countdown  date={Date.now() + 5.04e+7} renderer={renderer}></Countdown>
-        </Typography>
-        <Typography>
-        <img className='timer' src={timer.url} alt='loading...'></img>
-        </Typography>
+        <Typography className='deal'>{title}</Typography>
+        
+        {
+             timerData && 
+             <div>
+             <Typography className='counter'>
+             <Countdown  date={Date.now() + 5.04e+7} renderer={renderer}></Countdown>
+             </Typography>
+             <Typography>
+             <img className='timer' src={timer.url} alt='loading...'></img>
+             </Typography>
+             </div>
+        }
         <div className='btn'>
         <Button variant='contained' color='primary'>View All</Button>
         </div>
